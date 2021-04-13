@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="result">
+            <h1 class="random">Случайное число</h1>
+            <div class="result_number">
+                <span id="output" class="output_number"></span>
+            </div>
+        </div>
+        <div class="generator">
+            <form action="" class="form">
+                <input type="number" id="firstNumber" class="input" type="text" placeholder="Введите первое число">
+                <input type="number" id="secondaryNumber" class="input" type="text" placeholder="Введите второе число">
+                <button class="input button" type="button" onclick="randomize()">
+                    Сгенерировать
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
