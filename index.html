@@ -12,13 +12,15 @@
         <div class="result">
             <h1 class="random">Случайное число</h1>
             <div class="result_number">
-                <span id="output" class="output_number"></span>
+                <ol id="output" class="output_number"></ol>
             </div>
         </div>
         <div class="generator">
             <form action="" class="form">
-                <input type="number" id="firstNumber" class="input" type="text" placeholder="Введите первое число">
-                <input type="number" id="secondaryNumber" class="input" type="text" placeholder="Введите второе число">
+                <input type="number" id="firstNumber" class="input" placeholder="Введите первое число">
+                <input type="number" id="secondaryNumber" class="input" placeholder="Введите второе число">
+                <label for="quantityNumber">количство цифр</label>
+                <input type="number" id="quantityNumber" class="input">
                 <button class="input button" type="button" onclick="randomize()">
                     Сгенерировать
                 </button>

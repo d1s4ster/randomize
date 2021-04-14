@@ -1,9 +1,21 @@
 function randomize() {
-    let r1 = parseInt(document.getElementById("firstNumber").value); // вытаскиваем значение из превого инпута и сохраянем в переменную
-    let r2 = parseInt(document.getElementById("secondaryNumber").value); // вытаскиваем значение со второго инпута и сохраянем в переменную
+    let min = parseInt(document.getElementById("firstNumber").value);
+    let max = parseInt(document.getElementById("secondaryNumber").value);
+    let quantity = parseInt(document.getElementById("quantityNumber").value);
+    let output = document.getElementById("output");
 
-    let result = Math.random() * (r2 - r1) + r1; // функция рандома (встроенная в js)
-    let floorResult = Math.floor(result); // приводим значение раднома к целому числу
+    const arr = Array.from({ length: max-min+1 },
+    (v, i) => i +1);
+    
+    for (let i = 0; i < quantity; i++ ) {
 
-    return document.getElementById("output").innerHTML = floorResult; // возвращаем (return) полученное значение и вставляем его в span с id "output"
+        let randomize = Math.random() * (max - min) + min;
+        let result = Math.floor(randomize);
+        console.log(result);
+        //let outputItem = document.createElement('li');
+        //output.append(outputItem);
+        //output.textContent = result;
+        //return document.getElementById("output").innerHTML = result;
+    }
+
 }
