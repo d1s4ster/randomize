@@ -20,6 +20,10 @@ body{
     background: linear-gradient(180deg, rgba(175,171,236,1) 0%, rgba(216,216,236,1) 35%, rgba(111,131,184,1) 100%);
 }
 
+.result {
+    text-align: center;
+}
+
 .output_number{
     margin: 1rem 0;
     display: block;
